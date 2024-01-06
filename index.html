@@ -43,7 +43,7 @@
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Aditya Kumar</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <p ><span class="typedText"></span></p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -371,6 +371,20 @@
       </nav>
       <p>Copyright &#169; 2023 Aditya Kumar. All Rights Reserved.</p>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var typingEffect = new Typed(".typedText", {
+          strings: ["Java Developer", "Frontend Developer", "Backend Developer", "Full Stack Developer"],
+          loop: true,
+          typeSpeed: 100,
+          backSpeed: 80,
+          backDelay: 2000
+        });
+      });
+    </script>
+    
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
   </body>
 </html>
