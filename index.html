@@ -7,6 +7,8 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
   </head>
   <body>
     <nav id="desktop-nav">
@@ -14,8 +16,10 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#coding-profiles">Coding-Profile</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -30,8 +34,10 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#coding-profiles" onclick="toggleMenu()">Coding-Profile</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
@@ -112,7 +118,14 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>B.Sc. in Computer Application<br />Master of Computer Application</p>
+              <p>
+                <strong>B.Sc. in Computer Application</strong><br />
+                Patna Science College, Patna University
+              </p>
+              <p>
+                <strong>Master of Computer Application</strong><br />
+                Jawaharlal Nehru University, New Delhi
+              </p>
             </div>
           </div>
           <div class="text-container">
@@ -165,6 +178,14 @@
         onclick="location.href='./#experience'"
       />
 </section>
+
+<section id="skills-chart">
+  <p class="section__text__p1">Skills</p>
+  <h1 class="title">Skills Radar Chart</h1>
+  <canvas id="skillsRadarChart" width="400" height="400"></canvas>
+</section>
+
+
 
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
@@ -403,6 +424,21 @@
               </button>
           </div> -->
           </div>
+
+          <div class="details-container coding-platform-container">
+            <h2 class="experience-sub-title coding-title">HackerRank</h2>
+            <a href="https://www.hackerrank.com/profile/kaditya125_ak" target="_blank">
+              <img src="./assets/900px-HackerRank_Icon-1000px.png" alt="GeeksforGeeks Logo" class="coding-platform-logo" />
+            </a>
+            <!-- <div class="btn-container">
+            <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/kaditya125/Railways_Management_System'"
+              >
+                gfg
+              </button>
+          </div> -->
+          </div>
           
         </div>
       </div>
@@ -480,7 +516,26 @@
         
       </div>
     </section> -->
-    
+    <!-- Add this code to your HTML -->
+<section id="feedback">
+  <p class="section__text__p1">Share Your Feedback</p>
+  <h1 class="title">Feedback</h1>
+  <div class="feedback-form-container">
+    <form id="feedbackForm">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Feedback:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit" class="btn btn-color-1">Submit Feedback</button>
+    </form>
+  </div>
+</section>
+
     
     
 

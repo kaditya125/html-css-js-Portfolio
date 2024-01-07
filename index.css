@@ -251,6 +251,7 @@ section {
 
 .btn-color-2 {
   background: none;
+  color: #000;
 }
 
 .btn-color-2:hover {
@@ -388,8 +389,8 @@ article .icon {
 
 .coding-platform-logo {
   border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  width: 70%;
+  height: 70%;
 }
 .coding-title {
   margin: 1rem;
@@ -569,4 +570,181 @@ body.dark-mode {
 
 #dark-mode-toggle:hover {
   background-color: #555;
+}
+
+#skills-chart {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the height to full viewport height */
+}
+
+.skills-chart-container {
+  text-align: left;
+  transition: all 0.3s ease; /* Add transition for all properties over 0.3 seconds with ease timing function */
+}
+
+.skills-chart-container:hover {
+  transform: scale(1.05); /* Scale the container on hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow on hover */
+}
+
+/* General transition for all elements */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Navigation */
+#desktop-nav, #hamburger-nav {
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a {
+  transition: color 0.3s ease;
+}
+
+/* Buttons */
+.btn {
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+/* Icons */
+.icon {
+  transition: transform 0.3s ease;
+}
+
+/* Arrow icon */
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+/* Dark mode toggle button */
+#dark-mode-toggle {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Profile picture */
+.section__pic-container img {
+  transition: transform 0.3s ease;
+}
+
+/* Social media icons */
+#socials-container img {
+  transition: transform 0.3s ease;
+}
+
+/* Section titles */
+.title {
+  transition: color 0.3s ease;
+}
+
+/* Skill items */
+.skill-item {
+  transition: transform 0.3s ease;
+}
+
+/* Radar chart */
+#skills-chart {
+  transition: transform 0.3s ease;
+}
+
+/* Experience article containers */
+.article-container {
+  transition: transform 0.3s ease;
+}
+
+/* Project images */
+.project-img {
+  transition: transform 0.3s ease;
+}
+
+/* Coding platform logos */
+.coding-platform-logo {
+  transition: transform 0.3s ease;
+}
+
+/* Contact icons */
+.contact-icon {
+  transition: transform 0.3s ease;
+}
+
+/* Footer links */
+footer a {
+  transition: color 0.3s ease;
+}
+
+/* Hover effects */
+.btn:hover,
+.nav-links a:hover,
+.icon:hover,
+.arrow:hover,
+#dark-mode-toggle:hover,
+.section__pic-container img:hover,
+#socials-container img:hover,
+.title:hover,
+.skill-item:hover,
+#skills-chart:hover,
+.article-container:hover,
+.project-img:hover,
+.coding-platform-logo:hover,
+.contact-icon:hover,
+footer a:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Dark mode toggle hover effect */
+#dark-mode-toggle:hover {
+  background-color: #2c3e50; /* Change to your desired hover background color */
+  color: white; /* Change to your desired hover text color */
+}
+
+/* Footer links hover effect */
+footer a:hover {
+  color: #3498db; /* Change to your desired hover text color */
+}
+
+
+/* Add this code to your CSS or modify existing styles */
+#feedback {
+ /* Light background color */
+  padding: 30px;
+  margin: 20px 0;
+  border-radius: 15px;
+}
+
+.feedback-form-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#feedbackForm {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 12px;
+  background-color: #4CAF50; /* Green color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green color on hover */
 }
