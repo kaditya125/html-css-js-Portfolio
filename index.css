@@ -530,7 +530,7 @@ footer p {
   width: 45%;
   margin: 15px 0;
   padding: 15px;
-  border: 1px solid #ddd;
+  border: 1px solid #333; /* Change the border color to a darker shade, you can adjust the hex code as needed */
   border-radius: 8px;
   box-sizing: border-box; /* Ensure that padding is included in the total width */
 }
@@ -539,5 +539,6 @@ footer p {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
+
 
 /* Add more styling as needed */
