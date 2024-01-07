@@ -101,4 +101,32 @@
       text-align: justify;
     }
   }
-  
+  /* Update for WhatsApp number, contact number, and location styles at different screen sizes */
+
+/* Larger screens */
+@media screen and (min-width: 1200px) {
+  /* Style for WhatsApp number */
+  .contact-info-upper-container .contact-info-container:nth-child(4) {
+    margin-right: 20px; /* Adjust the margin as needed */
+  }
+
+  /* Style for contact number */
+  .contact-info-upper-container .contact-info-container:nth-child(3) {
+    margin-right: 20px; /* Adjust the margin as needed */
+  }
+
+  /* Style for location */
+  .contact-info-upper-container .contact-info-container:nth-child(2) {
+    margin-right: 20px; /* Adjust the margin as needed */
+  }
+}
+
+/* Medium screens */
+@media screen and (max-width: 1200px) {
+  /* Add specific styles for WhatsApp number, contact number, and location at medium screens */
+}
+
+/* Small screens */
+@media screen and (max-width: 600px) {
+  /* Add specific styles for WhatsApp number, contact number, and location at small screens */
+}
