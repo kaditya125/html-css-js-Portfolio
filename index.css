@@ -526,13 +526,13 @@ footer p {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
 .skill-item {
   width: 45%;
   margin: 15px 0;
   padding: 15px;
   border: 1px solid #ddd;
   border-radius: 8px;
+  box-sizing: border-box; /* Ensure that padding is included in the total width */
 }
 
 .skill-item h3 {
