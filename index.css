@@ -380,6 +380,24 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
+/*codinf profile*/
+
+#coding-profiles {
+  position: relative;
+}
+
+.coding-platform-logo {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+.coding-title {
+  margin: 1rem;
+  color: black;
+}
+
+
+
 /* CONTACT */
 
 #contact {
