@@ -411,6 +411,68 @@ article .icon {
 .contact-info-container p {
   font-size: larger;
 }
+.contact-info-container a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.contact-info-container img {
+  margin-right: 10px; /* Adjust as needed for spacing */
+}
+/* Add this to your existing CSS */
+/* Add this to your existing CSS */
+/* #coding-platforms {
+  margin-top: 20px;
+} */
+/* 
+#coding-platforms h2 {
+  font-size: 3rem;
+}
+
+.coding-platform-container {
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 10px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.coding-platform-logo {
+  width: 24px; 
+ height: 24px;
+  margin-right: 5px;
+}
+
+#coding-platforms {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.coding-platform-container {
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 12px;
+  flex: 1;
+  max-height: 100px; /* Adjust the maximum height as needed 
+}
+#coding-platforms a {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  transition: color 0.3s ease-in-out;
+}
+
+#coding-platforms a:hover {
+  color: grey;
+} */ 
+
+
+
 
 .contact-icon {
   cursor: default;

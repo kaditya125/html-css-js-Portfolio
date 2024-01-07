@@ -350,7 +350,9 @@
             alt="Location icon"
             class="icon contact-icon"
           />
-          <p>Jawaharlal Nehru University, New Delhi</p>
+          <a href="https://www.google.com/maps?q=Jawaharlal+Nehru+University,+New+Delhi">
+            <p>Jawaharlal Nehru University, New Delhi</p>
+          </a>
         </div>
         <div class="contact-info-container">
           <img
@@ -358,10 +360,43 @@
             alt="Phone icon"
             class="icon contact-icon"
           />
-          <p>9102202267</p>
+          <a href="tel:+9102202267">
+            <p>9102202267</p>
+          </a>
+        </div>
+        <div class="contact-info-container">
+          <a href="https://wa.me/9102202267" target="_blank">
+            <img
+              src="./assets/whatsapp.svg"
+              alt="WhatsApp icon"
+              class="icon contact-icon"
+            />
+            <p>9102202267</p>
+          </a>
         </div>
       </div>
     </section>
+    <!-- <section id="profile">
+     
+    
+      <div id="coding-platforms">
+        <h2>Coding Platforms</h2>
+        <div class="coding-platform-container">
+          <a href="https://leetcode.com/your-leetcode-username" target="_blank">
+            <img src="./assets/leetcode-logo.png" alt="LeetCode Logo" class="coding-platform-logo" />
+            LeetCode
+          </a>
+        </div>
+        <div class="coding-platform-container">
+          <a href="https://auth.geeksforgeeks.org/user/your-gfg-username/practice/" target="_blank">
+            <img src="./assets/gfg-logo.png" alt="GeeksforGeeks Logo" class="coding-platform-logo" />
+            GeeksforGeeks
+          </a>
+        </div>
+        
+      </div>
+    </section> -->
+    
     
     
     
@@ -388,6 +423,13 @@
           backDelay: 2000
         });
       });
+     
+
+      document.querySelector('.contact-icon').addEventListener('click', function() {
+         window.open('https://wa.me/1234567890'); // Replace with your actual WhatsApp number
+        });
+
+
     </script>
     
     <script src="script.js"></script>
