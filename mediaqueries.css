@@ -130,3 +130,8 @@
 @media screen and (max-width: 600px) {
   /* Add specific styles for WhatsApp number, contact number, and location at small screens */
 }
+@media (max-width: 768px) {
+  .skill-item {
+    width: 100%; /* Set the width to 100% for mobile screens */
+  }
+}
