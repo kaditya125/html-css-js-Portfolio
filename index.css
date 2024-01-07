@@ -542,3 +542,31 @@ footer p {
 
 
 /* Add more styling as needed */
+/* Existing styles */
+
+body {
+  /* Existing body styles */
+  background-color: #fff; /* Set your default background color */
+  color: #333; /* Set your default text color */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #333; /* Set your dark mode background color */
+  color: #fff; /* Set your dark mode text color */
+}
+
+#dark-mode-toggle {
+  padding: 8px 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 8rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#dark-mode-toggle:hover {
+  background-color: #555;
+}

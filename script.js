@@ -16,3 +16,26 @@ document.querySelector('.contact-icon').addEventListener('click', function() {
 //     backDelay:2000
 
 // })
+document.addEventListener('DOMContentLoaded', function () {
+    // Check if dark mode preference is stored in localStorage
+    const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+  
+    // Set initial dark mode state
+    if (isDarkMode) {
+      document.body.classList.add('dark-mode');
+    }
+  
+    // Toggle dark mode on button click
+    window.toggleDarkMode = function () {
+      const body = document.body;
+      body.classList.toggle('dark-mode');
+  
+      // Update localStorage with the user's preference
+      if (body.classList.contains('dark-mode')) {
+        localStorage.setItem('darkMode', 'enabled');
+      } else {
+        localStorage.setItem('darkMode', 'disabled');
+      }
+    };
+  });
+  
