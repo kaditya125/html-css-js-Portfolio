@@ -170,6 +170,7 @@ section {
 }
 
 .section__pic-container {
+  
   display: flex;
   height: 400px;
   width: 400px;
@@ -362,7 +363,7 @@ article .icon {
 
 .color-container {
   border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+ 
 }
 
 .project-img {
@@ -748,3 +749,33 @@ button {
 button:hover {
   background-color: #45a049; /* Darker green color on hover */
 }
+
+/* Add border radius only to the profile picture in .c2 container */
+.section__pic-container.c2 img {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+/* Add border in dark mode for contrast */
+.dark-mode .section__pic-container.c2 img {
+  border: 2px solid #fff; /* Adjust the border color as needed */
+}
+
+
+/* Add border to the skills section */
+
+
+/* Add border to individual skill items */
+
+
+/* Add border in dark mode for contrast */
+.dark-mode #skills {
+  border-color: #fff; /* Adjust the dark mode border color as needed */
+}
+
+.dark-mode .skill-item {
+  border-color: #fff; /* Adjust the dark mode border color as needed */
+}
+
