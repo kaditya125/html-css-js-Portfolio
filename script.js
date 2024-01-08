@@ -126,20 +126,20 @@ document.addEventListener('DOMContentLoaded', function () {
       },
     });
   });
-// Add this code to your existing JavaScript or create a new script
-// document.addEventListener("DOMContentLoaded", function () {
-//   const feedbackForm = document.getElementById("feedbackForm");
 
-//   feedbackForm.addEventListener("submit", function (event) {
-//     event.preventDefault();
+document.addEventListener("DOMContentLoaded", function () {
+  const feedbackForm = document.getElementById("feedbackForm");
+
+  feedbackForm.addEventListener("submit", function (event) {
+    event.preventDefault();
     
-//     // You can replace this alert with your desired action (e.g., sending feedback to a server)
-//     alert("Feedback submitted! Thank you for sharing your thoughts.");
+    // You can replace this alert with your desired action (e.g., sending feedback to a server)
+    alert("Feedback submitted! Thank you for sharing your thoughts.");
     
-//     // Clear form fields
-//     feedbackForm.reset();
-//   });
-// });
+    // Clear form fields
+    feedbackForm.reset();
+  });
+});
   
 document.addEventListener("DOMContentLoaded", function () {
   anime({
