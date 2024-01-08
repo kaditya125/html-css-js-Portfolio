@@ -141,5 +141,79 @@ document.addEventListener('DOMContentLoaded', function () {
 //   });
 // });
   
-  
+document.addEventListener("DOMContentLoaded", function () {
+  anime({
+    targets: '#about',
+    opacity: [0, 1],
+    translateY: [50, 0],
+    easing: 'easeInOutQuad',
+    duration: 1000,
+  });
+
+  // Animation for the 'Skills' section
+  anime({
+    targets: '#skills',
+    opacity: [0, 1],
+    translateX: [-50, 0],
+    easing: 'easeInOutQuad',
+    duration: 1000,
+  });
+
+  // Animation for the 'Experience' section
+  anime({
+    targets: '#experience',
+    opacity: [0, 1],
+    translateY: [50, 0],
+    easing: 'easeInOutQuad',
+    duration: 1000,
+  });
+
+  // Add more animations for other sections as needed
+
+  // Example for the 'Projects' section
+  anime({
+    targets: '#projects',
+    opacity: [0, 1],
+    translateX: [50, 0],
+    easing: 'easeInOutQuad',
+    duration: 1000,
+  });
+
+  // Example for the 'Contact' section
+  anime({
+    targets: '#contact',
+    opacity: [0, 1],
+    translateY: [50, 0],
+    easing: 'easeInOutQuad',
+    duration: 1000,
+  });
+  anime({
+    targets: '#contact',
+    opacity: [0, 1],
+    translateY: [50, 0],
+    easing: 'easeInOutQuad',
+    duration: 1000,
+  });
+  anime({
+    targets: '.logo',
+    opacity: [0, 1],
+    translateX: [-200, 0],
+    easing: 'easeInOutExpo',
+    duration: 1000,
+    delay: 1000
+  });
+  anime({
+    targets: 'nav a',
+    opacity: [0, 1],
+    translateY: [-50, 0],
+    easing: 'easeInOutExpo',
+    duration: 1200,
+    delay: (el,i) => {
+      return 1000 +100 * i;
+    }
+
+  });
+});
+
+
   
