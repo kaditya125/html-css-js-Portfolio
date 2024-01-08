@@ -836,3 +836,20 @@ button:hover {
 .skill-item h3 {
   margin-bottom: 5px; /* Add some space below the heading */
 }
+
+ .logo {
+  text-align: center;
+  font-size: 3rem; 
+  font-weight: bold;
+  color: #3498db; 
+  margin-bottom: 20px; 
+  
+} 
+
+/* Example for a gradient background */
+.logo.gradient-background {
+  
+  color: #000; /* Choose text color that contrasts well with the gradient */
+  padding: 20px;
+  border-radius: 10px; /* Add some border-radius for a modern look */
+}
