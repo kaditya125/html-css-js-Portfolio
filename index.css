@@ -792,3 +792,33 @@ button:hover {
   display: block;
   margin: 0 auto;
 }
+.dark-mode section#experience {
+}
+
+.dark-mode section#experience h1
+.dark-mode section#experience p{
+  color: #fff;
+}
+.dark-mode section#experience h2
+{
+      color: #555;
+}
+.dark-mode section#experience h3
+{
+  color: #000;
+}
+.dark-mode section#experience p {
+  color: #555; 
+}
+
+/* Dark mode styles for the arrow icon */
+.dark-mode .icon.arrow {
+  filter: invert(1); /* Invert the color for a dark appearance */
+}
+
+/* Additional styles to make sure the arrow is visible in dark mode */
+.dark-mode .icon.arrow {
+  border: 2px solid #fff; /* Adjust the border color as needed */
+  
+  padding: 5px;
+}
