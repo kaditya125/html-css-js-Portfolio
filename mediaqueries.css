@@ -42,6 +42,11 @@
       height: 275px;
       margin: 0 auto 2rem;
     }
+    /* .section__pic-container.c2 img {
+      
+      border-radius: 50%;
+    } */
+    
     .about-containers {
       margin-top: 0;
     }
@@ -122,14 +127,51 @@
 }
 
 /* Medium screens */
+/* Medium screens (max-width: 1200px) */
 @media screen and (max-width: 1200px) {
-  /* Add specific styles for WhatsApp number, contact number, and location at medium screens */
+  /* WhatsApp number */
+  .contact-info-container a[href^="https://wa.me/"] {
+    /* Add your styles for WhatsApp number at medium screens */
+    color: #00e676; /* Green color for WhatsApp */
+    font-weight: bold;
+  }
+
+  /* Contact number */
+  .contact-info-container a[href^="tel:"] {
+    /* Add your styles for contact number at medium screens */
+    color: #2196F3; /* Blue color for phone number */
+    font-weight: bold;
+  }
+
+  /* Location */
+  .contact-info-container a[href^="https://maps.google.com"] {
+    /* Add your styles for location at medium screens */
+    color: #FF9800; /* Orange color for location */
+    font-weight: bold;
+  }
 }
 
-/* Small screens */
+/* Small screens (max-width: 600px) */
 @media screen and (max-width: 600px) {
-  /* Add specific styles for WhatsApp number, contact number, and location at small screens */
+  /* WhatsApp number */
+  .contact-info-container a[href^="https://wa.me/"] {
+    /* Add your styles for WhatsApp number at small screens */
+    font-size: 1.2em; /* Increase font size */
+  }
+
+  /* Contact number */
+  .contact-info-container a[href^="tel:"] {
+    /* Add your styles for contact number at small screens */
+    font-size: 1.2em; /* Increase font size */
+  }
+
+  /* Location */
+  .contact-info-container a[href^="https://maps.google.com"] {
+    /* Add your styles for location at small screens */
+    font-size: 1.2em; /* Increase font size */
+  }
 }
+
 @media (max-width: 768px) {
   .skill-item {
     width: 100%; /* Set the width to 100% for mobile screens */
@@ -186,5 +228,40 @@
   }
 }
 
+
+/* Add this block under your existing media query styles */
+
+/* Add this block under your existing media query styles */
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #1c1c1c; /* Dark background color */
+  color: #ffffff; /* Light text color for better contrast */
+}
+
+/* RGB rotating border effect */
+@keyframes rotatingBorder {
+  0% {
+    border-color: rgb(200, 0, 0);
+  }
+  25% {
+    border-color: rgb(0, 200, 0);
+  }
+  50% {
+    border-color: rgb(0, 0, 200);
+  }
+  75% {
+    border-color: rgb(200, 200, 0);
+  }
+  100% {
+    border-color: rgb(200, 0, 200);
+  }
+}
+
+/* Apply rotating border to dark mode */
+body.dark-mode section,
+body.dark-mode .experience-details-container {
+  animation: rotatingBorder 5s linear infinite;
+}
 
 

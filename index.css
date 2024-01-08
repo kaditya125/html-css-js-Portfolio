@@ -316,6 +316,7 @@ section {
   margin: auto 0;
 }
 
+
 /* EXPERIENCE SECTION */
 
 #experience {
@@ -607,17 +608,17 @@ body.dark-mode {
 
 /* Buttons */
 .btn {
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.5s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 /* Icons */
 .icon {
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 /* Arrow icon */
 .arrow {
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 /* Dark mode toggle button */
@@ -627,42 +628,42 @@ body.dark-mode {
 
 /* Profile picture */
 .section__pic-container img {
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 /* Social media icons */
 #socials-container img {
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 /* Section titles */
 .title {
-  transition: color 0.3s ease;
+  transition: color 0.5s ease;
 }
 
 /* Skill items */
 .skill-item {
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 /* Radar chart */
 #skills-chart {
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 /* Experience article containers */
 .article-container {
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 /* Project images */
 .project-img {
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 /* Coding platform logos */
 .coding-platform-logo {
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 /* Contact icons */
@@ -753,15 +754,15 @@ button:hover {
 /* Add border radius only to the profile picture in .c2 container */
 .section__pic-container.c2 img {
   border-radius: 50%;
-  overflow: hidden;
+  /* overflow: hidden;
   width: 100%;
-  height: auto;
+  height: auto; */
 }
 
 /* Add border in dark mode for contrast */
-.dark-mode .section__pic-container.c2 img {
+/* .dark-mode .section__pic-container.c2 img {
   border: 2px solid #fff; /* Adjust the border color as needed */
-}
+ */
 
 
 /* Add border to the skills section */
@@ -779,3 +780,15 @@ button:hover {
   border-color: #fff; /* Adjust the dark mode border color as needed */
 }
 
+#skills-chart {
+  text-align: center;
+}
+
+#skills-chart .title {
+  margin-top: 1rem; /* Adjust the margin as needed */
+}
+
+#skills-chart #skillsRadarChart {
+  display: block;
+  margin: 0 auto;
+}
