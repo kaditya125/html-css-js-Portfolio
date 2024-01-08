@@ -211,7 +211,15 @@ document.addEventListener("DOMContentLoaded", function () {
     delay: (el,i) => {
       return 1000 +100 * i;
     }
-
+  
+  });
+  anime({
+    targets: '.title',
+    opacity: [0, 1],
+    translateX: [-200, 0],
+    easing: 'easeInOutExpo',
+    duration: 1000,
+    delay: 1000
   });
 });
 
