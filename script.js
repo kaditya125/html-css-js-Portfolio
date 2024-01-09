@@ -224,4 +224,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-  
+  // Add this to your JavaScript file
+function handleButtonClick(button) {
+  button.classList.add('btn-celebrate');
+  setTimeout(() => {
+    button.classList.remove('btn-celebrate');
+  }, 500);
+}
