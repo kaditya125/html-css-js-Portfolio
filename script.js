@@ -142,13 +142,13 @@ document.addEventListener("DOMContentLoaded", function () {
 });
   
 document.addEventListener("DOMContentLoaded", function () {
-  anime({
-    targets: '#about',
-    opacity: [0, 1],
-    translateY: [50, 0],
-    easing: 'easeInOutQuad',
-    duration: 1000,
-  });
+  // anime({
+  //   targets: '#about',
+  //   opacity: [0, 1],
+  //   translateY: [50, 0],
+  //   easing: 'easeInOutQuad',
+  //   duration: 1000,
+  // });
 
   // Animation for the 'Skills' section
   anime({

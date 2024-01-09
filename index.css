@@ -443,56 +443,7 @@ article .icon {
 .contact-info-container img {
   margin-right: 10px; /* Adjust as needed for spacing */
 }
-/* Add this to your existing CSS */
-/* Add this to your existing CSS */
-/* #coding-platforms {
-  margin-top: 20px;
-} */
-/* 
-#coding-platforms h2 {
-  font-size: 3rem;
-}
 
-.coding-platform-container {
-  border: 1px solid rgb(163, 163, 163);
-  border-radius: 10px;
-  margin-right: 10px;
-  overflow: hidden;
-}
-
-.coding-platform-logo {
-  width: 24px; 
- height: 24px;
-  margin-right: 5px;
-}
-
-#coding-platforms {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.coding-platform-container {
-  border: 1px solid rgb(163, 163, 163);
-  border-radius: 10px;
-  overflow: hidden;
-  padding: 12px;
-  flex: 1;
-  max-height: 100px; /* Adjust the maximum height as needed 
-}
-#coding-platforms a {
-  color: black;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  transition: color 0.3s ease-in-out;
-}
-
-#coding-platforms a:hover {
-  color: grey;
-} */ 
 
 #skills{
   position: relative;
@@ -558,7 +509,7 @@ body {
 
 /* Dark mode styles */
 body.dark-mode {
-  background-color: #333; /* Set your dark mode background color */
+  /* Set your dark mode background color */
   color: #fff; /* Set your dark mode text color */
 }
 
@@ -742,7 +693,7 @@ textarea {
 
 button {
   padding: 12px;
-  background-color: #4CAF50; /* Green color */
+  
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -756,15 +707,10 @@ button:hover {
 /* Add border radius only to the profile picture in .c2 container */
 .section__pic-container.c2 img {
   border-radius: 50%;
-  /* overflow: hidden;
-  width: 100%;
-  height: auto; */
+  
 }
 
-/* Add border in dark mode for contrast */
-/* .dark-mode .section__pic-container.c2 img {
-  border: 2px solid #fff; /* Adjust the border color as needed */
- */
+
 
 
 /* Add border to the skills section */
@@ -775,7 +721,8 @@ button:hover {
 
 /* Add border in dark mode for contrast */
 .dark-mode #skills {
-  border-color: #fff; /* Adjust the dark mode border color as needed */
+  border-color: #000;
+  color: #fff; /* Adjust the dark mode border color as needed */
 }
 
 .dark-mode .skill-item {
@@ -794,9 +741,12 @@ button:hover {
   display: block;
   margin: 0 auto;
 }
-.dark-mode section#experience {
+.dark-mode section#About h3 {
+  color: #fff;
 }
-
+.dark-mode section#About p {
+  color: #555;
+}
 .dark-mode section#experience h1
 .dark-mode section#experience p{
   color: #fff;
