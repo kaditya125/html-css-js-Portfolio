@@ -55,8 +55,12 @@
         <img src="./assets/adi1.jpg" alt="Aditya profile picture" />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello !, I'm</p>
-        <h1 class="title">Aditya Kumar</h1>
+        <p class="section__text__p1"><img
+          src="./assets/namaste.png"
+          alt="Education icon"
+          class="icon"
+        /><span id="dynamicText" class="typedText1"></span>, I'm</p>
+        <h1 class="title">Aditya Kumar  ( आदित्य कुमार )</h1>
         <p ><span class="typedText"></span></p>
         <div class="btn-container">
           <button
@@ -615,15 +619,24 @@
           backSpeed: 80,
           backDelay: 2000
         });
+      
+      var typingEffect = new Typed(".typedText1", {
+          strings: ["नमस्ते !", "Hello !", "Hola !", "Bonjour !", "Ciao !", "Konnichiwa !", "Guten Tag !", "Olá !", "안녕하세요 !"],
+          loop: true,
+          typeSpeed: 100,
+          backSpeed: 80,
+          backDelay: 2000
+        });
       });
      
 
       document.querySelector('.contact-icon').addEventListener('click', function() {
-         window.open('https://wa.me/1234567890'); // Replace with your actual WhatsApp number
+         window.open('https://wa.me/9102202267'); // Replace with your actual WhatsApp number
         });
 
 
     </script>
+    
     
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
